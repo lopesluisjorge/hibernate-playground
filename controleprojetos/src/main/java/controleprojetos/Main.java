@@ -1,6 +1,6 @@
-package departamento;
+package controleprojetos;
 
-import departamento.infra.EMFactory;
+import controleprojetos.infra.EMFactory;
 
 public class Main {
 

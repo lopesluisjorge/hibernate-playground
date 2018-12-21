@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>localclient</groupId>
-    <artifactId>departamento</artifactId>
+    <artifactId>controleprojetos</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>

@@ -1,4 +1,4 @@
-package departamento.model;
+package controleprojetos.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -37,6 +37,7 @@ final public class Project {
 
     @OneToMany(mappedBy = "project")
     private List<Allocation> allocations = new ArrayList<>();
+
 
     public Integer getId() {
         return id;

@@ -1,4 +1,4 @@
-package departamento.model;
+package controleprojetos.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

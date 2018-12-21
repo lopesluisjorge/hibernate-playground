@@ -1,6 +1,7 @@
-package departamento.model;
+package controleprojetos.model;
 
 import javax.persistence.*;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -36,6 +37,14 @@ final public class City {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Set<Employee> getEmployees() {
+        return employeeSet;
+    }
+
+    public void add(Employee ... employees) {
+        employeeSet.addAll(Arrays.asList(employees));
     }
 
     @Override

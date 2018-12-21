@@ -1,6 +1,7 @@
-package departamento.model;
+package controleprojetos.model;
 
 import javax.persistence.*;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,6 +18,7 @@ final public class State {
 
     @Column(name = "uf", length = 2, nullable = false, unique = true)
     private String federativeUnit;
+
 
     @OneToMany(mappedBy = "state")
     private Set<City> cities = new HashSet<>();
@@ -38,7 +40,20 @@ final public class State {
         return federativeUnit;
     }
 
+    public void setFederativeUnit(String federativeUnit) {
+        this.federativeUnit = federativeUnit;
+    }
+
     public void setId(Integer id) {
         this.id = id;
     }
+
+    public Set<City> getCities() {
+        return cities;
+    }
+
+    public void add(City ... cities) {
+        this.cities.addAll(Arrays.asList(cities));
+    }
+
 }
