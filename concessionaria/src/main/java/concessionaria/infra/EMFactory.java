@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 public class EMFactory {
 
-    private final static EntityManagerFactory factory = Persistence.createEntityManagerFactory("dealership");
+    private final static EntityManagerFactory factory = Persistence.createEntityManagerFactory("concessionaria");
 
     public static EntityManager getEntityManager() {
         return factory.createEntityManager();
